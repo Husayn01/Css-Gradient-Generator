@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Css Gradient Generator</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-text">
+            <h3>Free CSS gradient generator tool!</h3>
+            <h1>CSS Gradient Generator</h1>
+            <p> With this powerful tool, you can quickly and easily generate custom CSS gradients 
+                with a wide range of color options and customizable settings. Whether you're a web developer looking to add some extra flair to your
+                 site or a graphic designer creating eye-catching visuals, a CSS gradient generator tool can help you take your designs to the next level.
+                  So why wait? Try out a CSS gradient generator tool today and start creating stunning, customized gradients in no time!
+            </p>
+            <button>Generate</button>
+        </div>
+    </div>
+    <div class="main">
+        <h2>Generate your own gradient</h2>
+        <p>Create your own css beautiful gradient. You are just a click away</p>
+       
+
+        <div class="main-random">
+            <div id="gradient-box">
+            </div>
+            <div class="copy-box">
+                <label for="direction">Gradient direction</label>
+                <select name="direction" id="gradDirection">
+                    <option value="linear">linear</option>
+                    <option value="radial">radial</option>
+                </select>
+                <br>
+            <input type="text" id="input-copy" value="linear-gradient(to right,rgb(85, 249,226),rgb(240,20,127))">
+            <button onclick="copyCode()" class="btn-copy">Copy</button>
+            </div>
+            <button onclick="generateColor()" class="btn-random">Generate random Gradient</button>
+        </div>
+        <div class="footer">
+            <p>Created with <i class="fas fa-heart"></i> by Husayn</p>
+           <div class="social">
+            <a href=""> <i class="fab fa-github"></i></a>
+            <a href=""> <i class="fab fa-whatsapp"></i></a>
+            <a href=""> <i class="fab fa-facebook"></i></a>
+           </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
